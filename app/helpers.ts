@@ -14,7 +14,7 @@ export function getProjectList() {
   }
 }
 
-export function getProjectMarkdown(slug) {
+export function getProjectMarkdown(slug: string) {
   try {
     const file = path.join(process.cwd(), markdownDirectory, `${slug}.md`);
     const markdown = fs.readFileSync(file, 'utf8');
