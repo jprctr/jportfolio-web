@@ -1,7 +1,7 @@
 import { redirect } from 'next/navigation';
 import ReactMarkdown from "react-markdown";
 
-import { getProjectMarkdown } from '@/app/helpers';
+import { getProjectData } from '@/app/helpers';
 
 /*
   look into:
@@ -14,7 +14,8 @@ import { getProjectMarkdown } from '@/app/helpers';
 
 export default async function Project({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const project = getProjectMarkdown(slug);
+  const project = getProjectData(slug);
+  console.log(project);
   if (project.error) {
     redirect('/');
   }
