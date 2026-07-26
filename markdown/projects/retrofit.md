@@ -7,8 +7,6 @@ industry: Art
 link: https://somarts.org/event/rebootingthefuture/
 description: An interactive arcade cabinet installation where visitors press buttons on an 8x4 grid to raise the elevation of onscreen topography, but the landscape gradually resets to water level, conveying the message that in an uncertain world, our ability to shape our environment is limited and temporary.
 ---
-## Retrofit
-
 ### Brief
 Exhibition prompt: Imagine what the future might hold and what technological tools we might use, discard or redesign to get there. Our goal is to bring together artists who leverage technology and new media in order to access the imagination, Futurity, and the Divine.
 

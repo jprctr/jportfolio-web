@@ -7,8 +7,6 @@ industry: Media
 link: https://covid19.biglocalnews.org/county-maps
 description: An interactive map tool developed with Pitch Interactive and Stanford Big Local News to provide local journalists with freely embeddable visualizations of COVID-19 confirmed cases and fatalities across US states and counties, normalized per 100k population with moving averages to ensure accurate, up-to-date pandemic coverage.
 ---
-## COVID-19 Case Mapper
-
 ### Brief
 Create an interactive map providing up-to-date, freely embeddable visualizations for local journalists to complement their COVID-19 pandemic coverage. The tool needed to show confirmed cases and fatalities in the US in relation to population in each state and county, using rates per 100k people to normalize comparisons. The map should use moving averages to avoid misleading presentations from statistical artifacts, with search functionality for zip codes or county names.
 

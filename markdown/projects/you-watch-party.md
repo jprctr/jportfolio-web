@@ -7,8 +7,6 @@ industry: Media
 link: https://www.cosmopolitan.com/entertainment/tv/a30090671/cosmo-google-netflix-you-watch-party-second-screen/
 description: A second screen interactive mobile companion experience created for the season two premiere of Netflix's You, featuring behind-the-scenes content, quizzes, and videos that played out in real time alongside the episode, with a custom CMS enabling Cosmopolitan to upload content and a quiz results report at the end of each episode.
 ---
-## You Watch Party Interactive Experience
-
 ### Brief
 Build a second screen interactive mobile companion experience for the season two premiere of Netflix's You, created in collaboration with Cosmopolitan Magazine. The experience needed to feature behind-the-scenes content, quizzes, and videos about each episode that played out in real time along with the episode being watched. A CMS was needed to enable the Cosmopolitan team to upload content that would be generated into custom interactive cards playing out sequentially in real time. At the end of each episode, users should be able to view a quiz results report and share it with friends.
 

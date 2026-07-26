@@ -7,8 +7,6 @@ industry: E-commerce / Technology
 link: 
 description: Built custom business analytics visualizations geared for company-wide viewing at eBay, from executive level to entry level, to help employees better understand financial trends, forecasts, cross-border transactions, device usage, traffic funnel metrics, real-time global trends, and more. All visualizations needed to be clear and understandable for people outside the analytics team.
 ---
-## Financial Analytics Dashboard
-
 ### Brief
 Build custom business analytics visualizations geared for company-wide viewing at eBay, from executive level to entry level, to help employees better understand financial trends, forecasts, cross-border transactions, device usage, traffic funnel metrics, real-time global trends, and more. All visualizations needed to be clear and understandable for people outside the analytics team. The dashboard should include comprehensive filtering capabilities, views including payments flows, performance summaries, and regional breakdowns.
 

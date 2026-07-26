@@ -7,8 +7,6 @@ industry: Nonprofit
 link: https://decodinghate.taaf.org/
 description: Decoding Hate visualizes the unprecedented amount of hate incidents targeting the AAPI community during the COVID-19 pandemic through a scrolling narrative and interactive timeline of 3D fragments, helping raise awareness about anti-Asian hate and encourage support for affected individuals.
 ---
-## Decoding Hate
-
 ### Brief
 Visualize the unprecedented amount of hate incidents targeting the AAPI community during the COVID-19 pandemic. The project needed to capture hate incidents reported by news organizations and social media users to convey the magnitude and scope of the crisis. The experience should help shed light on various attributes including location, victim gender, and whether incidents were COVID-related, while raising awareness and encouraging support for those affected.
 

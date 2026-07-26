@@ -7,17 +7,15 @@ industry: Advertising
 link: 
 description: A streamlined web application enabling UM agency teams to create custom visualizations for clients based on their proprietary Brand Patterns model, allowing teams to select clients, competitors, and audiences; translate selections into YouGov API queries; process results through the Brand Patterns model; and generate client-ready visualizations viewable online or exported as static images.
 ---
-## Brand Patterns
-
 ### Brief
 Build a streamlined tool enabling UM agency teams to create custom visualizations for clients based on their proprietary Brand Patterns model. The application needed to allow teams to select clients, competitors, and audiences; translate selections into YouGov API queries; process results through the Brand Patterns model; and generate client-ready visualizations viewable online or exported as static images.
 
 Stakeholders included the Chief Product Officer at UM, analysts who created the Brand Patterns model, and the DevOps team. The project team consisted of a full stack developer (me) and a former Two-N colleague (front-end developer). My role involved converting manually-run R analysis scripts into a web service, managing queries and database operations using MySQL with Sequelize, creating the network visualization component, using the plumber library to handle web requests and route them to data processing functions, and wrapping the analysis service in Docker for consistent environment integration. The target audience was agency teams at UM (Universal McCann) and their external clients.
 
 ### Tech Stack
-- **Front-end:** TypeScript, Next.js, React, Redux, D3, TailwindCSS
-- **Analysis Service:** R, Plumber, Docker
-- **Database:** MySQL with Sequelize
+- Front-end: TypeScript, Next.js, React, Redux, D3, TailwindCSS
+- Analysis Service: R, Plumber, Docker
+- Database: MySQL with Sequelize
 
 ### Design Process
 The design process focused on streamlining brand and audience selection for complex queries while highlighting selections that could limit statistical validity. A key solution was creating an intuitive selection interface with validation to prevent statistically invalid queries. Another major challenge was designing complex comparisons for readability when exported as static images while providing additional details and options in the interactive web app, which was addressed by implementing a dual-output system with clear visual hierarchy.

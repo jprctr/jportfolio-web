@@ -20,10 +20,14 @@ export default async function Project({ params }: { params: Promise<{ slug: stri
     redirect('/');
   }
   return (
-    <>
-      <ProjectSummary metadata={project.metadata} />
-      {project.metadata.link && <a href={project.metadata.link} target='_blank'>{project.metadata.link}</a>}
-      <ReactMarkdown>{project.markdown}</ReactMarkdown>
-    </>
+    <div className='flex flex-col gap-2 bg-white-layer p-4 rounded-md'>
+      <div className='detail flex flex-col mb-2'>
+        <ProjectSummary metadata={project.metadata} />
+        {project.metadata.link && <a href={project.metadata.link} target='_blank'>Link ↗</a>}
+      </div>
+      <div className='project flex flex-col gap-2'>
+        <ReactMarkdown>{project.markdown}</ReactMarkdown>
+      </div>
+    </div>
   );
 }

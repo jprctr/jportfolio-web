@@ -10,7 +10,6 @@ export function getAboutCopy() {
   try {
     const file = path.join(process.cwd(), markdownDirectory, 'about.md');
     const markdown = fs.readFileSync(file, 'utf8');
-    console.log(markdown);
     return { markdown };
   } catch (error) {
     return { error };

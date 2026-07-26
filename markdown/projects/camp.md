@@ -7,22 +7,20 @@ industry: Healthcare
 link: 
 description: Built an enterprise-wide KPI-centered dashboard and interactive data analytics center of excellence for CAMP at Hospital for Special Surgery, featuring operational excellence visualizations, hospital network monitoring with heat maps and 3D flyover views, and a patient journey storyteller component to support $2.1B in annual operations and better quality care for 200,000+ patients annually.
 ---
-## Center for Analytics Modeling and Performance (CAMP)
-
 ### Brief
 Build an enterprise-wide KPI-centered dashboard and interactive data analytics center of excellence for the CAMP team at Hospital for Special Surgery. The project included an operational excellence data analytics center with touchscreens, hospital and provider network monitoring with heat maps and 3D flyover views, and a patient journey storyteller feature. The goal was to create advanced data analytics and awareness supporting better quality care and $2.1B in annual operations.
 
 ### Tech Stack
-- **Visualization**: Deck.gl (Basemap, heatmap, 3D rendering), D3
-- **Framework**: React
-- **Technologies**: JavaScript, HTML, CSS, AWS, custom data APIs
+- Visualization: Deck.gl (Basemap, heatmap, 3D rendering), D3
+- Framework: React
+- Technologies: JavaScript, HTML, CSS, AWS, custom data APIs
 
 ### Design Process
-1. Conducted on-site workshops with CAMP team and workspace architects to gather feedback and understand user needs
-2. Addressed challenges with large touch display readability by scaling up type and interface elements
-3. Implemented automatic smoothing for complex actions like map zooming to enhance usability
-4. Defined clear purposes for each visualization with expandable detail views to balance aesthetics with practical usefulness
-5. Created an interactive data analytics center of excellence that incites delight while maintaining the gravity of elite healthcare delivery
+- Conducted on-site workshops with CAMP team and workspace architects to gather feedback and understand user needs
+- Addressed challenges with large touch display readability by scaling up type and interface elements
+- Implemented automatic smoothing for complex actions like map zooming to enhance usability
+- Defined clear purposes for each visualization with expandable detail views to balance aesthetics with practical usefulness
+- Created an interactive data analytics center of excellence that incites delight while maintaining the gravity of elite healthcare delivery
 
 ### Development Process
 - Architected solution using deck.gl (choosen for geospatial and performance features)

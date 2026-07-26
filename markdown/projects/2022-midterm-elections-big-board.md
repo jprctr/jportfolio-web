@@ -7,8 +7,6 @@ industry: Media
 link: 
 description: Update the Hitboard interactive election map to highlight notable House races during the 2022 midterm elections, incorporating a new district collections component for competitive or notable races while maintaining the visual language and intuitive touch interface for live television operation.
 ---
-## 2022 Midterm Elections Big Board
-
 ### Brief
 Update the Hitboard interactive election map to highlight notable House races during the 2022 midterm elections. The project required incorporating a new district collections component to highlight competitive or otherwise notable races, while maintaining the visual language and intuitive touch interface necessary for live television operation. The custom CMS needed to be updated to allow NBC teams to easily create and manage collections of House races on the fly for display on air.
 

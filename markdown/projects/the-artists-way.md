@@ -7,8 +7,6 @@ industry: Art
 link: 
 description: An audiovisual exploration that critiques the role of language in the contemporary art ecosystem by parsing over 400 artists' statements into poetic phrases and visualizing their conceptual relationships in an immersive 3D network installation.
 ---
-## The Artist's Way
-
 ### Brief
 Critique the role of language in the contemporary art ecosystem, from gallery wall text to press releases to funding organizations to graduate MFA program instruction to artist statements. Create a work that reveals patterns in how artists describe themselves and how this language shapes our engagement with art.
 
@@ -21,17 +19,17 @@ Critique the role of language in the contemporary art ecosystem, from gallery wa
 - VOSviewer (analysis of artists' statements for network extraction)
 
 ### Design Process
-1. **Data Analysis Phase**: Used VOSviewer to analyze over 400 artists' statements, extracting key concepts and mapping their co-occurrence relationships to create a network of nodes and links.
-2. **Prototype Development**: Created iterative prototypes sharing visual and parsing approaches with collaborator Andrew, exploring various ways to represent the network poetically.
-3. **Conceptual Development**: Recognized that the collection of concepts and their connections resembled a landscape, leading to the development of camera movement techniques to navigate this "conceptual landscape."
-4. **Parsing Rule Development**: Developed custom generative rules including alphabetical sentence rearrangement, extraction of aphorisms and questions, phrase pattern matching (e.g., 'I + ____', 'my work + ____', 'this + ____'), parts of speech analysis, phonetic similarities, and poetic forms (acrostics, haikus).
+- Data Analysis Phase: Used VOSviewer to analyze over 400 artists' statements, extracting key concepts and mapping their co-occurrence relationships to create a network of nodes and links.
+- Prototype Development: Created iterative prototypes sharing visual and parsing approaches with collaborator Andrew, exploring various ways to represent the network poetically.
+- Conceptual Development: Recognized that the collection of concepts and their connections resembled a landscape, leading to the development of camera movement techniques to navigate this "conceptual landscape."
+- Parsing Rule Development: Developed custom generative rules including alphabetical sentence rearrangement, extraction of aphorisms and questions, phrase pattern matching (e.g., 'I + ____', 'my work + ____', 'this + ____'), parts of speech analysis, phonetic similarities, and poetic forms (acrostics, haikus).
 
 ## Development Process
-1. **Data Pipeline**: Built system to ingest and analyze over 400 artists' statements using VOSviewer, creating the initial network structure with nodes labeled with text and links showing conceptual connections.
-2. **Visualization Core**: Implemented the Three.js network visualization with smooth camera control and zoom-out functionality for overview perspectives.
-3. **Audio Integration**: Collaborated with Andrew to synchronize generative audio with visual phases using Tone.js, creating distinct sonic experiences for different parsing rules.
-4. **Installation Build**: Created two large-scale projection installations—a diptych and a vertical wall—with the vertical wall arranged with gaps to accommodate the gallery's stained glass windows.
-5. **Performance Optimization**: Applied iterative testing and refinement to ensure smooth motion and responsive interaction.
+- Data Pipeline: Built system to ingest and analyze over 400 artists' statements using VOSviewer, creating the initial network structure with nodes labeled with text and links showing conceptual connections.
+- Visualization Core: Implemented the Three.js network visualization with smooth camera control and zoom-out functionality for overview perspectives.
+- Audio Integration: Collaborated with Andrew to synchronize generative audio with visual phases using Tone.js, creating distinct sonic experiences for different parsing rules.
+- Installation Build: Created two large-scale projection installations—a diptych and a vertical wall—with the vertical wall arranged with gaps to accommodate the gallery's stained glass windows.
+- Performance Optimization: Applied iterative testing and refinement to ensure smooth motion and responsive interaction.
 
 ## Delivered Result
 An audiovisual exploration of over 400 artists' statements, parsed and remixed into poetic phrases according to custom generative rules, installed as two large-scale projections (diptych and vertical wall). Each segment lasts roughly one to two minutes, with some longer phrases created by rearranging sentences alphabetically and excerpts displaying aphorisms and questions. The installation critiques the role of language in the contemporary art ecosystem, inviting viewers to contemplate how words shape our engagement with art while revealing patterns in artists' self-descriptions.

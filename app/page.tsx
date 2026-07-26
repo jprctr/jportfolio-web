@@ -9,19 +9,19 @@ export default function Home() {
   const list = getProjectList();
 
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <>
+      <div className='detail flex flex-col gap-4'>
         <ReactMarkdown>{about.markdown}</ReactMarkdown>
-        <h2>Projects</h2>
-        {
-          list.projects && list.projects.map(({ slug, metadata }) => (
-            <Link key={slug} href={`/projects/${slug}`}>
-              <ProjectSummary metadata={metadata} />
-              <p>{metadata.description}</p>
-            </Link>
-          ))
-        }
-      </main>
-    </div>
+      </div>
+      <h2>Projects</h2>
+      {
+        list.projects && list.projects.map(({ slug, metadata }) => (
+          <Link key={slug} className='bg-white-layer px-4 py-2 rounded-md' href={`/projects/${slug}`}>
+            <ProjectSummary metadata={metadata} />
+            <p className='py-2'>{metadata.description}</p>
+          </Link>
+        ))
+      }
+    </>
   );
 }

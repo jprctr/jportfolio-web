@@ -7,8 +7,6 @@ industry: Art
 link: 
 description: Cute Pet is an interactive oracle installation where visitors share their outlook on the future through a 2D political compass-style interface, while a fortune-telling GPU cat oracle responds with cryptic wisdom powered by a local LLM.
 ---
-## Cute Pet
-
 ### Brief
 Perspectives around today's American Societal Decline. This group art show features US based artists covering a range of topics like national and personal identity, increasing complexity, excess & greed, the military industrial complex, mental health, superstition, activism, resistance, community, and hope.
 

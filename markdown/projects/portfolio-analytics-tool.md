@@ -7,8 +7,6 @@ industry: Financial Services
 link: https://www.franklintempleton.com/tools-and-resources/portfolio-analytics-tool
 description: Portfolio Analytics Tool is a web application for financial advisors to generate, analyze, and present portfolio performance with configurable benchmarks and hypothetical scenarios based on historical events.
 ---
-## Portfolio Analytics Tool
-
 ### Brief
 Continue development and take the Portfolio Analytics Tool from Beta to Production release for Franklin Templeton's financial advisors. The tool needed to enable advisors to generate, analyze, and present portfolio performance with configurable benchmarks and hypothetical scenarios based on historical events. Requirements included maintaining brand alignment, ensuring data accuracy from multiple sources, managing user permissions, and providing comprehensive legal disclosures.
 
