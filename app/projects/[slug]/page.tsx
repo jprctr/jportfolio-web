@@ -2,6 +2,7 @@ import { redirect } from 'next/navigation';
 import ReactMarkdown from "react-markdown";
 
 import { getProjectData } from '@/app/helpers';
+import ProjectSummary from '@/app/components/projectSummary';
 
 /*
   look into:
@@ -19,6 +20,10 @@ export default async function Project({ params }: { params: Promise<{ slug: stri
     redirect('/');
   }
   return (
-    <ReactMarkdown>{project.markdown}</ReactMarkdown>
+    <>
+      <ProjectSummary metadata={project.metadata} />
+      {project.metadata.link && <a href={project.metadata.link} target='_blank'>{project.metadata.link}</a>}
+      <ReactMarkdown>{project.markdown}</ReactMarkdown>
+    </>
   );
 }

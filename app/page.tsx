@@ -2,6 +2,7 @@ import Link from 'next/link';
 import ReactMarkdown from "react-markdown";
 
 import { getAboutCopy, getProjectList } from '@/app/helpers';
+import ProjectSummary from '@/app/components/projectSummary';
 
 export default function Home() {
   const about = getAboutCopy();
@@ -13,12 +14,12 @@ export default function Home() {
         <ReactMarkdown>{about.markdown}</ReactMarkdown>
         <h2>Projects</h2>
         {
-          list.projects && list.projects.map(({ slug, metadata }) => {
-            const { title } = metadata;
-            return (
-              <Link key={slug} href={`/projects/${slug}`}>{title}</Link>
-            )
-          })
+          list.projects && list.projects.map(({ slug, metadata }) => (
+            <Link key={slug} href={`/projects/${slug}`}>
+              <ProjectSummary metadata={metadata} />
+              <p>{metadata.description}</p>
+            </Link>
+          ))
         }
       </main>
     </div>
