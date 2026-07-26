@@ -1,6 +1,8 @@
 import Link from 'next/link';
 
-export default function ProjectSummary({ metadata }) {
+import { Metadata } from '@/app/types';
+
+export default function ProjectSummary({ metadata }: { metadata: Metadata }) {
   const { title, description, category, client, industry, link } = metadata;
   return (
     <div className='flex flex-col gap-2 mb-2'>

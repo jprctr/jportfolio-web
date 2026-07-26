@@ -3,6 +3,8 @@ import path from 'path';
 import matter from 'gray-matter';
 import sortBy from 'lodash.sortby';
 
+import { Metadata } from '@/app/types';
+
 const markdownDirectory = 'markdown';
 const projectDirectory = 'projects';
 
@@ -21,7 +23,7 @@ export function getProjectData(slug: string) {
     const file = path.join(process.cwd(), `${markdownDirectory}/${projectDirectory}`, `${slug}.md`);
     const text = fs.readFileSync(file, 'utf8');
     const { data, content } = matter(text);
-    return { metadata: data, markdown: content };
+    return { metadata: data as Metadata, markdown: content };
   } catch (error) {
     return { error };
   }
@@ -38,7 +40,7 @@ export function getProjectList() {
         slug,
         ...projectData,
       };
-    }), ({ metadata }) => -metadata.date);
+    }), ({ metadata }) => metadata && metadata.date && -metadata.date);
     return { projects };
   } catch (error) {
     console.error(error);
