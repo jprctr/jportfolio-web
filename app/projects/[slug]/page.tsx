@@ -15,7 +15,6 @@ import { getProjectData } from '@/app/helpers';
 export default async function Project({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const project = getProjectData(slug);
-  console.log(project);
   if (project.error) {
     redirect('/');
   }

@@ -1,0 +1,5 @@
+# James Proctor
+
+## Software Developer & Experience Engineer building engaging applications, platforms, and experiences that connect users with data and the powerful stories it tells
+
+I’m most excited about opportunities to build tools to help people better understand the world around them. I enjoy finding creative uses for technology to solve problems and enable novel visual presentations. I honed my skills at studios like Pitch Interactive and TWO-N, and track record of delivering for clients including Google, Nike, eBay, NBC, Franklin Templeton, Universal McCann, Hospital for Special Surgery, Cosmopolitan, Stanford University, and The Asian American Foundation.

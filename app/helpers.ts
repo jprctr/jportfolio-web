@@ -4,10 +4,33 @@ import matter from 'gray-matter';
 import sortBy from 'lodash.sortby';
 
 const markdownDirectory = 'markdown';
+const projectDirectory = 'projects';
+
+export function getAboutCopy() {
+  try {
+    const file = path.join(process.cwd(), markdownDirectory, 'about.md');
+    const markdown = fs.readFileSync(file, 'utf8');
+    console.log(markdown);
+    return { markdown };
+  } catch (error) {
+    return { error };
+  }
+}
+
+export function getProjectData(slug: string) {
+  try {
+    const file = path.join(process.cwd(), `${markdownDirectory}/${projectDirectory}`, `${slug}.md`);
+    const text = fs.readFileSync(file, 'utf8');
+    const { data, content } = matter(text);
+    return { metadata: data, markdown: content };
+  } catch (error) {
+    return { error };
+  }
+}
 
 export function getProjectList() {
   try {
-    const directory = path.join(process.cwd(), markdownDirectory);
+    const directory = path.join(process.cwd(), `${markdownDirectory}/${projectDirectory}`);
     const projectFiles = fs.readdirSync(directory);
     const projects = sortBy(projectFiles.map(file => {
       const slug = file.replace('.md', '');
@@ -21,16 +44,5 @@ export function getProjectList() {
   } catch (error) {
     console.error(error);
     return { error };
-  }
-}
-
-export function getProjectData(slug: string) {
-  try {
-    const file = path.join(process.cwd(), markdownDirectory, `${slug}.md`);
-    const text = fs.readFileSync(file, 'utf8');
-    const { data, content } = matter(text);
-    return { metadata: data, markdown: content };
-  } catch (error) {
-    return { error }
   }
 }
