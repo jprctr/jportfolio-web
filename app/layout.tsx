@@ -24,8 +24,8 @@ export default function RootLayout({
     <html lang='en' className={`${raleway.variable} min-h-full antialiased`}>
       <body className='font-sans min-h-full flex flex-col flex-1 items-center'>
         <CellCanvas />
-        <main className='flex flex-1 w-full max-w-3xl flex-col gap-4 px-8 py-8 z-1'>
-          <Link href='/'><h1>James Proctor</h1></Link>
+        <main className='flex flex-1 w-full max-w-4xl flex-col gap-4 px-8 py-8 z-1'>
+          <Link href='/'><h1 className='px-4'>James Proctor</h1></Link>
           {children}
         </main>
       </body>
