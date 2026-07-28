@@ -25,6 +25,7 @@ export default function Home() {
                   <Image
                     src={`/projects/${slug}/0.jpg`}
                     alt={`${metadata.title} thumbnail`}
+                    loading='eager'
                     className='aspect-3/2 height-auto object-cover object-top rounded-md'
                     width='720'
                     height='720'
