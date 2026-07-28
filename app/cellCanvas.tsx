@@ -6,20 +6,28 @@ import debounce from 'lodash.debounce';
 const cellSize = 100;
 
 export default function CellCanvas() {
+  const [hydrated, setHydrated] = useState<boolean>(false);
   const [rows, setRows] = useState<number[]>([]);
   const [cols, setCols] = useState<number[]>([]);
 
   useEffect(() => {
-    const resizeHandle = debounce(() => {
-      const { innerWidth, innerHeight } = window;
-      const rowCells = Math.floor(innerHeight / cellSize);
-      const colCells = Math.floor(innerWidth / cellSize);
-      setRows(new Array(rowCells).fill(0).map((_, i) => i));
-      setCols(new Array(colCells).fill(0).map((_, i) => i));
-    }, 100);
-    resizeHandle();
+    setHydrated(true);
+    const calculateSize = () => {
+      const width = document.documentElement.clientWidth || window.innerWidth;
+      const height = document.documentElement.clientHeight || window.innerHeight;
+      if (!width || !height) return;
+      const rowCells = Math.floor(height / cellSize);
+      const colCells = Math.floor(width / cellSize);
+      setRows(Array.from({ length: rowCells }, (_, i) => i));
+      setCols(Array.from({ length: colCells }, (_, i) => i));
+    }
+    const resizeHandle = debounce(calculateSize, 100);
+    requestAnimationFrame(calculateSize);
     window.addEventListener('resize', resizeHandle);
-    return () => window.removeEventListener('resize', resizeHandle);
+    return () => {
+      window.removeEventListener('resize', resizeHandle);
+      resizeHandle.cancel();
+    };
   }, []);
 
   const cells = useMemo(() => {
@@ -34,15 +42,11 @@ export default function CellCanvas() {
         ))
       ))
     );
-  }, [rows.length, cols.length]);
+  }, [hydrated, rows.length, cols.length]);
 
-  return (rows.length > 0 && cols.length) && (
+  return hydrated ? (
     <div
-      className={`
-        fixed top-0 bottom-0 left-0 right-0 
-        grid grid-flow-rows 
-        pointer-events-none
-      `}
+      className={`fixed top-0 bottom-0 left-0 right-0 grid grid-flow-rows pointer-events-none`}
       style={{
         gridTemplateRows: `repeat(${rows.length}, 1fr)`,
         gridTemplateColumns: `repeat(${cols.length}, 1fr)`,
@@ -50,5 +54,5 @@ export default function CellCanvas() {
     >
       {cells}
     </div>
-  );
+  ) : null;
 }
