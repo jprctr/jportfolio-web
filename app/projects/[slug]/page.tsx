@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 
 import { getProjectData } from '@/app/helpers';
 import ProjectSummary from '@/app/components/projectSummary';
+import ImageGallery from '@/app/components/imageGallery';
 
 /*
   look into:
@@ -20,7 +21,7 @@ export default async function Project({ params }: { params: Promise<{ slug: stri
     redirect('/');
   }
   return (
-    <div className='flex flex-col gap-2 bg-white-layer p-4 rounded-md'>
+    <div className='@container flex flex-col gap-2 bg-white-layer p-4 rounded-md'>
       <div className='detail flex flex-col mb-2'>
         {project.metadata && (
           <>
@@ -29,8 +30,13 @@ export default async function Project({ params }: { params: Promise<{ slug: stri
           </>
         )}
       </div>
-      <div className='project flex flex-col gap-2'>
-        <ReactMarkdown>{project.markdown}</ReactMarkdown>
+      <div className='flex flex-col'>
+        <div className='flex'> 
+          {slug && <ImageGallery slug={slug} />}
+        </div>
+        <div className='project flex flex-col gap-2'>
+          <ReactMarkdown>{project.markdown}</ReactMarkdown>
+        </div>
       </div>
     </div>
   );

@@ -18,19 +18,19 @@ export default function Home() {
       <h2 className='px-4'>Projects</h2>
       {
         list.projects && list.projects.map(({ slug, metadata }) => (
-          <Link key={slug} className='bg-white-layer px-4 py-2 rounded-md' href={`/projects/${slug}`}>
+          <Link key={slug} className='@container bg-white-layer px-4 py-2 rounded-md' href={`/projects/${slug}`}>
             {metadata && (
-              <div className='flex gap-4'>
+              <div className='flex flex-col @2xl:gap-4 @2xl:flex-row @2xl:flex-row-reverse'>
                 <div className='flex-1 py-2'>
                   <Image
                     src={`/projects/${slug}/0.jpg`}
                     alt={`${metadata.title} thumbnail`}
                     className='aspect-3/2 height-auto object-cover object-top rounded-md'
-                    width='540'
-                    height='540'
+                    width='720'
+                    height='720'
                   />
                 </div>
-                <div className='flex-2'>
+                <div className='flex-2 @lg:bg-red'>
                   <ProjectSummary metadata={metadata} />
                   <p className='py-2'>{metadata.description}</p>
                 </div>

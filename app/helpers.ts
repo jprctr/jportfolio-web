@@ -6,6 +6,7 @@ import sortBy from 'lodash.sortby';
 import { Metadata } from '@/app/types';
 
 const markdownDirectory = 'markdown';
+const publicDirectory = 'public';
 const projectDirectory = 'projects';
 
 export function getAboutCopy() {
@@ -42,6 +43,17 @@ export function getProjectList() {
       };
     }), ({ metadata }) => metadata && metadata.date && -metadata.date);
     return { projects };
+  } catch (error) {
+    console.error(error);
+    return { error };
+  }
+}
+
+export function getProjectImageList(slug: string) {
+  try {
+    const directory = path.join(process.cwd(), `${publicDirectory}/${projectDirectory}/${slug}`);
+    const imageList = fs.readdirSync(directory);
+    return { imageList };
   } catch (error) {
     console.error(error);
     return { error };
