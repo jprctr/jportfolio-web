@@ -26,8 +26,8 @@ export default function RootLayout({
       <body className='font-sans min-h-full flex flex-col flex-1 items-center'>
         <CellCanvas />
         <main className='flex flex-1 w-full max-w-4xl flex-col gap-4 px-8 py-8 z-1'>
-          <Link className='flex px-2.5 gap-2' href='/'>
-            <Image className='my-auto w-8 h-8 rounded-md' src='/icon.png' width='128' height='128' alt='' />
+          <Link className='flex px-4 gap-2' href='/'>
+            {/*<Image className='my-auto w-8 h-8 rounded-md' src='/icon.png' width='128' height='128' alt='' />*/}
             <h1 className='m-auto ml-0'>James Proctor</h1>
           </Link>
           {children}
