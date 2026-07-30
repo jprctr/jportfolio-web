@@ -18,7 +18,7 @@ eBay's finance and analytics team engaged Pitch Interactive to help create a cus
 ### Requirements & Design
 When I joined the team at Pitch, the Financial Analytics Dashboard they had created for eBay was in active use across a number of business units. During my time on the project we identified headline KPIs for a number of the dashboard's individual views which could be surfaced through preview widgets on the homescreen which provided important insights on the state of the business at a glance. We also engaged with stakeholders from the client's analytics and technical teams to establish requirements for a new view, Payments, which provided a detailed view of flows from payment processors to sellers.
 
-### Build & Architecture **needs revision**
+### Build & Architecture
 The development process involved close coordiantion with eBay technical teams to define the necessary data models for the internal APIs created to support views such as the homescreen widgets and the Payments. On the front-end we implemented efficient data refresh mechanisms to keep the D3-in-react charts responsive and up-to-date with configuration and filter selections, while also maintinging a consisting design language and comfortable touch targets for controls.
 
 ### Delivery & Impact
