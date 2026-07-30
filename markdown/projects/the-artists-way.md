@@ -1,14 +1,15 @@
 ---
 title: The Artist's Way
 date: 2022-11-05
-category: Installation
+category: Art Installation
 client: Lemmerman Gallery, New Jersey City University
 industry: Art
 link: 
 description: An audiovisual exploration that critiques the role of language in the contemporary art ecosystem by parsing over 400 artists' statements into poetic phrases and visualizing their conceptual relationships in an immersive 3D network installation.
 ---
-### Brief
-Critique the role of language in the contemporary art ecosystem, from gallery wall text to press releases to funding organizations to graduate MFA program instruction to artist statements. Create a work that reveals patterns in how artists describe themselves and how this language shapes our engagement with art.
+
+### Concept
+The project examines how language permeates the contemporary art ecosystem, investigating patterns in how artists articulate their practices and how this framing influences audience engagement. By analyzing over 400 artists' statements alongside gallery texts, press releases, funding materials, and MFA curriculum, the work reveals the linguistic conventions that shape artistic self-representation and public perception. The installation transforms these collected narratives into poetic form, exposing both the richness of artistic expression and the constraints imposed by institutional discourse. Through generative parsing techniques—including alphabetical sentence rearrangement, aphorism extraction, pattern matching, parts of speech analysis, phonetic similarities, and poetic structures like acrostics and haikus—the work creates new poetic combinations that invite contemplation of how language itself constructs our relationship with art. 
 
 ### Tech Stack
 - JavaScript
@@ -18,21 +19,11 @@ Critique the role of language in the contemporary art ecosystem, from gallery wa
 - Tone.js (generative audio by Andrew Demirjian)
 - VOSviewer (analysis of artists' statements for network extraction)
 
-### Design Process
-- Data Analysis Phase: Used VOSviewer to analyze over 400 artists' statements, extracting key concepts and mapping their co-occurrence relationships to create a network of nodes and links.
-- Prototype Development: Created iterative prototypes sharing visual and parsing approaches with collaborator Andrew, exploring various ways to represent the network poetically.
-- Conceptual Development: Recognized that the collection of concepts and their connections resembled a landscape, leading to the development of camera movement techniques to navigate this "conceptual landscape."
-- Parsing Rule Development: Developed custom generative rules including alphabetical sentence rearrangement, extraction of aphorisms and questions, phrase pattern matching (e.g., 'I + ____', 'my work + ____', 'this + ____'), parts of speech analysis, phonetic similarities, and poetic forms (acrostics, haikus).
+### Requirements & Design
+The project emerged from a critical inquiry into how language functions within the contemporary art ecosystem, requiring a methodology that could systematically analyze and transform the linguistic patterns found across multiple institutional contexts. Working with collaborator Andrew Demirjian, the design process began with data analysis using VOSviewer to process over 400 artists' statements, extracting key concepts and mapping their co-occurrence relationships to establish a foundation of conceptual connections. The design evolved through iterative prototyping, exploring various generative parsing approaches that would transform raw statement material into poetic form. Custom rules were developed including alphabetical sentence rearrangement, extraction of aphorisms and questions, phrase pattern matching (such as 'I + ____', 'my work + ____', 'this + ____'), parts of speech analysis, phonetic similarities, and poetic structures like acrostics and haikus. 
 
-## Development Process
-- Data Pipeline: Built system to ingest and analyze over 400 artists' statements using VOSviewer, creating the initial network structure with nodes labeled with text and links showing conceptual connections.
-- Visualization Core: Implemented the Three.js network visualization with smooth camera control and zoom-out functionality for overview perspectives.
-- Audio Integration: Collaborated with Andrew to synchronize generative audio with visual phases using Tone.js, creating distinct sonic experiences for different parsing rules.
-- Installation Build: Created two large-scale projection installations—a diptych and a vertical wall—with the vertical wall arranged with gaps to accommodate the gallery's stained glass windows.
-- Performance Optimization: Applied iterative testing and refinement to ensure smooth motion and responsive interaction.
+### Build & Architecture
+The conceptual framework treats the network of artistic ideas as a landscape to be navigated, with adaptive camera movement allowing viewers to explore the interconnectedness of artistic concepts while remaining oriented to selected elements of interest. The accompanying generative audio by Andrew Demirjian provides distinct sonic experiences for different parsing approaches, deepening the multi-sensory engagement with these patterns of self-description. Ultimately, the piece invites audiences to reflect on how the vocabulary and rhetoric of the art world shape our understanding of artistic practice and identity. Technical implementation leverages VOSviewer for network extraction, Three.js for 3D scene rendering, React-Three-Fiber for React-Three.js integration, React for state management and display styling, and Tone.js for audio synchronization.
 
-## Delivered Result
-An audiovisual exploration of over 400 artists' statements, parsed and remixed into poetic phrases according to custom generative rules, installed as two large-scale projections (diptych and vertical wall). Each segment lasts roughly one to two minutes, with some longer phrases created by rearranging sentences alphabetically and excerpts displaying aphorisms and questions. The installation critiques the role of language in the contemporary art ecosystem, inviting viewers to contemplate how words shape our engagement with art while revealing patterns in artists' self-descriptions.
-
-## Summary Narrative
-I collaborated with Andrew Demirjian, a generative audio artist, to create "The Artist's Way" for the Lemmerman Gallery at Kean University's Jersey City campus. This project critiques the role of language in the contemporary art ecosystem—from gallery wall text and press releases to funding organizations and graduate MFA program instruction to artist statements themselves—by revealing patterns in how artists describe themselves and how this language shapes our engagement with art. Using VOSviewer to analyze over 400 artists' statements, I extracted key concepts and mapped their co-occurrence relationships to create a 3D network visualization in Three.js. The installation features custom generative parsing rules including alphabetical sentence rearrangement, extraction of aphorisms and questions, phrase pattern matching, parts of speech analysis, phonetic similarities, and poetic forms like acrostics and haikus. I implemented adaptive camera movement algorithms that smoothly navigate this conceptual landscape while keeping selected elements in view, built React-based state management for phrase selection and display styles, and synchronized generative audio with visual phases. The final deliverable was an immersive audiovisual installation in the dramatic chapel-like space of the Lemmerman Gallery, created as two large-scale projections (diptych and vertical wall with gaps for stained glass windows) that successfully invited viewers to contemplate how the language of art shapes our engagement with it.
+### Delivery & Impact
+An audiovisual exploration of over 400 artists' statements, parsed and remixed into poetic phrases according to custom generative rules. The installation was realized as two large-scale projection formats; a diptych and a vertical wall installation with intentional gaps to accommodate the gallery's stained glass windows. Installed in the dramatic chapel-like space of the Lemmerman Gallery at Kean University's Jersey City campus. Each segment presents poetic phrases lasting roughly one to two minutes, with some longer phrases created by rearranging sentences alphabetically and excerpts displaying aphorisms and questions. The installation critiques the role of language in the contemporary art ecosystem, inviting viewers to contemplate how words shape our engagement with art while revealing patterns in artists' self-descriptions.

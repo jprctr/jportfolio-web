@@ -2,32 +2,23 @@
 title: Kleptocrat
 date: 2017-08-01
 category: Game Development
-client: The Mintz Group
+client: Mintz Group
 industry: Investigations
 link: https://kleptocrat.net/
-description: A digital card game for iOS that teaches players absout kleptocracy and money laundering by analyzing 35 famous historical cases, letting players take on the role of a corrupt politician to understand real-world corruption patterns and risk factors.
+description: A digital card game for iOS that teaches about kleptocracy and money laundering by letting players take on the role of a corrupt politician and choose strategies based on famous historical cases to understand real-world corruption patterns and risk factors.
 ---
-### Brief
-Create a digital card game for iOS in the public interest that teaches players about kleptocracy and money laundering. The game analyzes 35 famous historical cases of kleptocracy, categorizing the techniques and breaking them down into clear steps to create cards illustrating these real-world methods. The gameplay lets players take on the role of a corrupt politician, moving their money, covering their tracks, choosing associates to trust, and living large - all while learning about risk factors at play. The game aims to help law enforcement, journalists, and NGOs trace and recover misappropriated public assets, while alerting citizens to asset-hiding patterns.
+### Need
+Following the release of Panama Papers in 2016, investigative firm Mintz Group wanted to create a tool to help the public learn more about kleptocracy and money laundering patterns. The project aimed to create an educational game that would help citizens, law enforcement, journalists, and NGOs better understand how public assets are misappropriated by immersing players in the reality of corruption. By taking on the role of a corrupt politician, players could recognize asset-hiding patterns and learn how corrupt officials move, conceal, and launder money through sophisticated offshore structures and legal frameworks.
 
 ### Tech Stack
 - Unity
 - C#
 
-### Design Process
-- Paper Prototyping: Began with highly iterative paper prototypes in sessions with both gameplay and investigative experts present
-- Expert Collaboration: Worked closely with investigative experts from The Mintz Group to ensure game mechanics accurately reflected real-world corruption patterns
-- Interface Design: Created an inviting interface that made the serious subject matter accessible and engaging without losing sight of the project's mission
-- Gameplay Mechanics: Designed a sticky gameplay loop that allowed players to experience corruption tactics first-hand while learning about detection and prevention methods
+### Requirements & Design
+Through iterative paper prototyping sessions, playtesting, and review by investigative experts, the project defined requirements that balanced engaging game mechanics with accurate representation of real-world corruption patterns. In a close collaboration between Mintz Group and Bumblebear Games we focused on creating a sticky gameplay loop where players could experience corruption tactics firsthand while simultaneously learning detection and prevention methods. The card-based approach naturally mapped to the investigation process, with each of the 35 historical cases breaking down kleptocracy techniques into clear categorical steps that could be explored through gameplay.
 
-### Development Process
-- Technology Learning: Collaborated closely with a developer from The Mintz team and BumbleBear Games to learn C# and Unity while maintaining the project timeline
-- Mechanical Iteration: Iterated extensively on game mechanics with continuous feedback from investigative experts to ensure accuracy
-- Platform Optimization: Focused on creating an engaging iOS experience that balanced technical performance with educational value
-- Card-Based Design: Implemented card-based gameplay that naturally mapped to the corruption investigation process
+### Build & Architecture
+During development, I collaborated with developer BumbleBear Games to learn C# and Unity while maintaining project timelines. The build process involved extensive iteration on game mechanics with ongoing feedback from investigative experts to ensure accuracy in representing patterns of corruption. I focused on creating an engaging iOS experience that balanced technical performance with educational value, implementing a card-based gameplay system that allowed players to select different methords to engage in and cover up corruption while under pressure from an investigator hot on their trail.
 
-### Delivered Result
-A unique game of strategy and tactics based on patterns of money laundering and offshore structuring used by corrupt public officials. The game lets players take on the role of a corrupt politician, moving their money, covering their tracks, choosing associates to trust, and living large - all while learning about the risk factors at play. The game breaks down kleptocracy techniques into clear steps, helping players understand how to take, hide, and move dirty money, then engage co-conspirators or abuse power to try to cover up actions and enjoy ill-gotten gains without getting caught.
-
-### Summary Narrative
-Following the release of Panama Papers in 2016, I worked with investigative firm The Mintz Group and developers BumbleBear Games to create Kleptocrat, a digital card game for iOS. The game analyzes 35 famous historical cases of kleptocracy, categorizing the techniques and breaking them down into clear steps to create cards illustrating these real-world methods. By letting players play as the corrupt politician, the game aims to help them recognize and bust corruption and money laundering, helping law enforcement, journalists, and NGOs trace and recover misappropriated public assets. This unique educational tool combines engaging gameplay with serious investigative journalism to raise awareness about kleptocracy and money laundering while empowering players with knowledge to identify and combat these practices.
+### Delivery & Impact
+A unique game of strategy and tactics based on real patterns of money laundering and offshore, Kleptocrat puts players in the role of a corrupt politician, moving their money, covering their tracks, choosing associates to trust, and living large, all while learning about the risk factors at play. The game breaks down kleptocracy techniques into clear steps, helping players understand how to take, hide, and move dirty money, then engage co-conspirators or abuse power to try to cover up their actions and enjoy ill-gotten gains without getting caught. By letting players experience corruption tactics firsthand, the game alerts citizens, law enforcement, journalists, and NGOs to help recognize asset-hiding behaviors in the real world.

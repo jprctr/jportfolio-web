@@ -7,8 +7,9 @@ industry: Apparel / Sportswear
 link: https://archive.pitchinteractive.com/Nike-Climate-and-Sport/
 description: An interactive data visualization experience created for the 2019 Climate Summit in NYC, collaborating with Rhodium Group to showcase current climate conditions and their impact on five different sports (Global Football, Running, Tennis, Snowboarding, and American Football), featuring custom visualizations showing both current impacts on athlete safety and future climate projections.
 ---
-### Brief
-Create an narrative data visualization experience for the 2019 Climate Summit in NYC about current climate conditions and their impact on sports around the world. The project, in collaboration with Rhodium Group, needed to focus on five different sports (Global Football, Running, Tennis, Snowboarding, and American Football). For each sport, custom data visualizations were needed showing current climate conditions' impacts on an athlete's ability to safely practice and play, plus future projections of impact should climate severity continue without intervention.
+
+### Need
+For the 2019 Climate Summit in NYC, Nike's Social Impact team partnered with Rhodium Group to create an engaging data storytelling experience that would communicate the tangible effects of climate change on athletes globally. The core challenge was making complex climate data accessible and emotionally resonant for the general public, particularly those passionate about sports. The solution needed to highlight how changing weather patterns directly impact athletes' ability to safely practice and play across five major sports: Global Football, Running, Tennis, Snowboarding, and American Football. By connecting climate projections to real-world athletic scenarios, the project aimed to raise awareness about climate change's effects on sport and inspire action toward sustainable solutions.
 
 ### Tech Stack
 - JavaScript
@@ -17,23 +18,11 @@ Create an narrative data visualization experience for the 2019 Climate Summit in
 - D3
 - Scrollama
 
-### Design Process
-- Identified the challenge of clearly highlighting projected climate impacts across five different sports by selecting distinct chart types for each
-- Ensured a clear, easily readable narrative for each sport while scaling designs down to smaller screens without flattening rich underlying datasets
-- Selected distinct chart types for each sport to highlight projected climate impacts effectively
-- Created visualizations including: mapping sub-freezing days in key mountain ranges for Snowboarding; choropleth maps for American Football showing regions where game days are being cancelled for heat and where climate policy changes could reduce those impacts
-- Accompanied all visualizations with quotes from prominent athletes in each sport to add human perspective and emotional resonance
-- Designed clear, readable narrative that maintained clarity when scaled down to smaller screens
+### Requirements & Design
+After collaborating with stakeholders from Nike and Rhodium Group, the team defined key requirements: the visualization needed to cover five distinct sports, each with unique climate challenges, while maintaining a cohesive narrative experience. Design focused on selecting distinct chart types tailored to each sport's specific climate vulnerabilities; mapping sub-freezing days for Snowboarding's mountain ranges and using choropleth maps for American Football to show heat-related game cancellations. The narrative structure was designed to balance rich underlying datasets with clear, readable information that would scale effectively across all screen sizes. Quotes from prominent athletes in each sport were integrated throughout to add human perspective and emotional resonance, ensuring the data felt personal and impactful rather than abstract.
 
-### Development Process
-- Focused on maintaining consistently smooth scroll-linked animations and updates for multiple charts across both mobile and desktop platforms
-- Implemented scrollama for scroll-linked animations and updates
-- Used React-Spring for smooth, performant animations
-- Carefully managed scroll events to maintain 60fps performance
-- Addressed challenges of handling rich datasets while maintaining performance across platforms ranging from mobile to desktop
+### Build & Architecture
+The development process prioritized performance and smooth user experience across both mobile and desktop platforms. The team implemented scroll-linked animations using React-Spring and Scrollama, carefully managing scroll events to maintain consistent 60fps performance throughout the interactive experience. A significant focus was placed on handling multiple datasets efficiently without compromising animation smoothness or visual clarity. The architecture leveraged D3 for data visualization capabilities while React provided a component-based structure that enabled modular development across the five sport sections.
 
-### Delivered Result
-Narrative experience illustrating the current and likely effects of climate change on athletes around the world. The experience focused on five different sports: Global Football, Running, Tennis, Snowboarding, and American Football. For each sport, we built a custom data visualization showing current climate conditions' impacts on an athlete's ability to safely practice and play their sport, and future projections of impact should climate severity continue without intervention. The experience utilized user scrolling on mobile or desktop to trigger animations, interactions, and to guide them through the entire narrative.
-
-### Summary Narrative
-For the 2019 Climate Summit in NYC, the Pitch Interactive team collaborated with Rhodium Group on an interactive data visualization experience for Nike's Social Impact team about current climate conditions and their impact on sports around the world. The project focused on five different sports—Global Football, Running, Tennis, Snowboarding, and American Football—creating custom visualizations that showed both current climate conditions' impacts on an athlete's ability to safely practice and play their sport, and future projections of impact should climate severity continue without intervention. The experience was designed for the general public, especially those interested in athletics and sport, and used distinct chart types for each sport including mapping sub-freezing days in mountain ranges for Snowboarding and choropleth maps for American Football showing heat-related game cancellations. Each visualization was accompanied by quotes from prominent athletes to add human perspective and emotional resonance. The team implemented scroll-linked animations using React-Spring and scrollama to maintain 60fps performance across mobile and desktop platforms, creating a compelling narrative experience that raised awareness about climate change's tangible effects on sport and inspired action toward sustainable solutions.
+### Delivery & Impact
+The delivered result was a compelling interactive experience that illustrated the current and projected effects of climate change on athletes worldwide across five sports. By combining custom data visualizations with athlete quotes and scroll-driven narrative flow, the project successfully communicated complex climate information in an accessible and emotionally engaging way. The experience demonstrated how changing climate conditions affect an athlete's ability to safely practice and play, showing both current impacts and future projections if climate severity continues without intervention. This narrative approach not only raised awareness about climate change's tangible effects on sport but also aligned with Nike's broader mission to inspire sustainable action, ultimately delivering a powerful tool for the 2019 Climate Summit that connected global environmental challenges to the universal language of athletics.

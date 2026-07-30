@@ -1,14 +1,14 @@
 ---
 title: Retrofit
 date: 2019-08-16
-category: Interactive Installation
+category: Interactive Art
 client: SOMArts
 industry: Art
 link: https://somarts.org/event/rebootingthefuture/
-description: An interactive arcade cabinet installation where visitors press buttons on an 8x4 grid to raise the elevation of onscreen topography, but the landscape gradually resets to water level, conveying the message that in an uncertain world, our ability to shape our environment is limited and temporary.
+description: A custom arcade cabinet where visitors press buttons on an 8x4 grid to raise the elevation of the onscreen topography. Retrofit’s playful form invites viewers to manipulate its environment. As they work, sandy islands grow together and fill with trees, streets, houses, and hills. Over time the landscape responds by reshaping itself; changing, and then erasing, the players work.
 ---
-### Brief
-Exhibition prompt: Imagine what the future might hold and what technological tools we might use, discard or redesign to get there. Our goal is to bring together artists who leverage technology and new media in order to access the imagination, Futurity, and the Divine.
+### Concept
+For SOMArts' 40th-anniversary "Rebooting the Future: Multimedia & Performance Arts Festival," artists were asked to imagine what the future might hold and what technological tools we might use, discard or redesign to get there. Retrofit explores themes of human agency, environmental change, and the fragility of our impact in an uncertain world.
 
 ### Tech Stack
 - JavaScript
@@ -18,14 +18,11 @@ Exhibition prompt: Imagine what the future might hold and what technological too
 - Circuit Python Controller Firmware (Adafruit NeoTrellis M4 microcontroller)
 - Satellite imagery (textures for elevation layers)
 
-### Design Process
-The design began with the concept of an arcade game about living in an uncertain world where the player's environmental changes are temporary and eventually erased. To match the Adafruit NeoTrellis M4 board as the input device, an 8x4 grid control scheme was designed with each button corresponding to a point in the landscape grid. For visualization, satellite imagery from San Francisco (near SOMArts) was used as textures, creating layers representing different elevation zones from water to beach, forest, and mountains. The core algorithm was a modified Conway's Game of Life where each cell has multiple elevation levels rather than binary states, with a bias toward gradual sinking back to water level.
+### Requirements & Design
+With Retrofit I really wanted to push this idea of play to the forefront as a way to draw people in and maybe lower their defenses a little. That's what drove the choice of the arcade cabinet as a form and the tactile buttons which provided a very straightfoward input method. My hope was, once you starting making something happen on screen you'd be curious to see the second-order consequences of those changes would be, with the use of satellite imagery from the local area extending those ideas about your sense of agency out into the real world.
 
-### Development Process
-The development process began with hardware integration, configuring the Adafruit NeoTrellis M4 microcontroller with Circuit Python firmware to output MIDI values when buttons were pressed. An input mapping system was then developed to map MIDI input values to corresponding grid coordinates in the browser application. The landscape was rendered in 3D using mesh vertices textured with satellite imagery, implementing manual vertex manipulation for stretching and bending effects. The modified Conway's Game of Life algorithm with multi-level elevation states (water, beach, forest, mountains) and bias toward gradual sinking was built and implemented. Finally, a smooth animation system was developed to show elevation changes and the landscape's response to player input.
+### Build & Architecture
+For the development process I was considering hardware integration, configuring the Adafruit NeoTrellis M4 microcontroller with Circuit Python firmware to output MIDI values when physical buttons were pressed. Then those MIDI input values were captured by the browser and mapped to corresponding grid coordinates on screen. The landscape was rendered in Three.js using meshes textured with satellite imagery. The verticies of those meshes were then manually manipulated, creating stretching and bending effects as the player pressed inputs. Finally in the background a modified Conway's Game of Life algorithm with multi-level elevation states (water, beach, forest, mountains) and bias toward gradual sinking created the core mechanic where formations adust to your inputs and then slowly erode back to water level.
 
-### Delivered Result
-A custom arcade cabinet installation where visitors press buttons on an 8x4 grid to raise the elevation of the onscreen topography. The landscape responds by reshaping itself—sandy islands grow and fill with trees, streets, houses, and hills. However, this control is temporary: little islands build up and then sink back down, and eventually all formations return to water level. The piece presents an arcade game form that invites playful interaction while conveying the message that in an uncertain world, our ability to shape our environment is limited and temporary. The installation was part of the "Rebooting the Future: Multimedia & Performance Arts Festival" at SOMArts' 40th-anniversary program, curated as a dialogue about imagining what the future might hold and how we might use, discard, or redesign technological tools to get there.
-
-### Summary Narrative
-I developed Retrofit as a solo artist for SOMArts' 40th-anniversary "Rebooting the Future" festival, creating an interactive arcade cabinet installation where visitors press buttons on an 8x4 grid to raise onscreen topography that gradually sinks back to water level via a modified Conway's Game of Life algorithm with multi-level elevation states. Using satellite imagery of the actual SOMArts neighborhood as textures and an Adafruit NeoTrellis M4 microcontroller for physical input, the piece combines a playful arcade interface with serious themes of environmental change and human agency, ultimately conveying that in an uncertain world, our ability to shape our environment is limited and temporary.
+### Delivery & Impact
+A custom arcade cabinet where visitors press buttons on an 8x4 grid to raise the elevation of the onscreen topography. The landscape responds by reshaping itself; sandy islands grow and fill with trees, streets, houses, and hills. However, this control is temporary: islands build up and then sink back down, and eventually all formations return to water level. The piece presents a game form that invites playful interaction while invinting the viewer to consider how we can make change in an uncertain world, and what responsibilties come with our ability to shape our environment. The installation was part of the "Rebooting the Future: Multimedia & Performance Arts Festival", SOMArts' 40th-anniversary program.

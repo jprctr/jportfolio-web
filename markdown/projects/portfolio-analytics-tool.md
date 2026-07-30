@@ -5,10 +5,10 @@ category: Business Intelligence
 client: Franklin Templeton
 industry: Financial Services
 link: https://www.franklintempleton.com/tools-and-resources/portfolio-analytics-tool
-description: Portfolio Analytics Tool is a web application for financial advisors to generate, analyze, and present portfolio performance with configurable benchmarks and hypothetical scenarios based on historical events.
+description: Web application created for Franklin Templeton's financial advisors to generate, analyze, and present portfolio performance. The tool provides a dashboard to create and manage custom portfolios with configurable benchmarks and hypothetical scenarios based on historical events.
 ---
-### Brief
-Continue development and take the Portfolio Analytics Tool from Beta to Production release for Franklin Templeton's financial advisors. The tool needed to enable advisors to generate, analyze, and present portfolio performance with configurable benchmarks and hypothetical scenarios based on historical events. Requirements included maintaining brand alignment, ensuring data accuracy from multiple sources, managing user permissions, and providing comprehensive legal disclosures.
+### Need
+Take the Portfolio Analytics Tool from Beta to Production release for Franklin Templeton's financial advisors. The tool needed to enable advisors to generate, analyze, and present portfolio performance with configurable benchmarks and hypothetical scenarios based on historical events. Requirements included maintaining brand alignment, ensuring data accuracy from multiple sources, managing user permissions, and providing comprehensive legal disclosures.
 
 ### Tech Stack
 - TypeScript
@@ -17,22 +17,11 @@ Continue development and take the Portfolio Analytics Tool from Beta to Producti
 - Redux
 - D3
 
-### Design Process
-- Careful and consistent use of color, typeface, and font size throughout the application
-- Interactive features like tooltips and interface elements to collapse or expand detailed information
-- UI hints to guide users through complex data
-- Closely reviewed Franklin's latest brand guidelines and consulted with their design team
-- Aligned application visuals with Franklin's house style
+### Requirements & Design
+The design process prioritized a consistent visual language throughout the interface, applying Franklin's specified color palette, typeface, and font sizing conventions to create a familiar experience for users already working within Franklin's ecosystem. Interactive elements such as tooltips and collapsible sections were strategically implemented to help advisors navigate complex financial data without overwhelming the interface. Careful consideration of UI hints and contextual guidance supported users as they worked through sophisticated features like benchmark configuration and scenario modeling, reducing the learning curve for less experienced users. The design team provided ongoing consultation during the redesign phase, ensuring every visual element—from button styling to spacing—adhered to Franklin's house style while maintaining usability for data-dense financial dashboards.
 
-### Development Process
-- Integrated with financial data providers to provide accurate and timely data updates
-- Used agile approach with weekly meetings with technical teams
-- Iterated based on user testing, legal review, and automated security audits
-- Collected relevant logs and analytics to ensure application performance
-- Implemented robust project organization and sharing permissions
+### Build & Architecture
+Delivering the production release required an iterative development approach grounded in agile methodologies, with weekly standups and coordinated efforts between our technical teams and Franklin Templeton stakeholders. Development cycles incorporated continuous feedback through user testing sessions, legal compliance reviews, and automated security audits that validated both functionality and adherence to regulatory requirements. Robust project organization and granular sharing permissions were implemented to support collaborative work across teams. Analytics and logging infrastructure was deployed early to monitor application performance and identify areas for optimization, ensuring the tool could scale with organizational adoption. This systematic approach enabled successful iteration through beta testing phases and a smooth transition to full production deployment.
 
-### Delivered Result
-Web application created for Franklin Templeton's financial advisors to generate, analyze, and present portfolio performance. The tool provides a dashboard to create and manage custom portfolios with configurable benchmarks and hypothetical scenarios based on historical events. Integrated with financial data providers to provide accurate and timely data updates. Successfully oversaw initial Production release.
-
-### Summary Narrative
-As a developer at Two-N, I worked on the Portfolio Analytics Tool (formerly Portfolio Construction Tool) for Franklin Templeton, a web application enabling financial advisors and financial professionals to generate, analyze, and present portfolio performance. When I joined, the tool was already in progress, and I started as a front-end developer writing features and bug fixes. After about six months, I was promoted to Lead Developer and oversaw a comprehensive redesign of the application to align with updated brand guidelines, taking the project from Beta to Production release. I managed weekly meetings with technical teams at Franklin Templeton and FinMason as the application underwent user testing, legal review, and automated security audits. I coordinated these efforts to ensure the application was ready for release. I also oversaw the comprehensive redesign to align with Franklin's updated brand guidelines, consulting closely with their design team to ensure the application felt at home in their house style. We successfully transitioned the tool to Production, making it available to Franklin Templeton advisors across the organization.
+### Delivery & Impact
+The portfolio analytics tool successfully transitioned from beta to full production release, providing Franklin Templeton's financial advisors and financial professionals with a comprehensive web application for portfolio performance analysis and presentation. The delivered solution includes a fully functional dashboard where advisors can create and manage custom portfolios, configure custom benchmarks, and run hypothetical scenario analyses based on historical market events. Integration with financial data providers ensures advisors receive accurate and timely data updates, enabling them to make informed recommendations to clients. The successful deployment made this analytical capability available organization-wide, empowering financial professionals to deliver more sophisticated portfolio insights and presentations to their clients across the Franklin Templeton network.

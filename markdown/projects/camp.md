@@ -5,30 +5,21 @@ category: Business Intelligence
 client: Hospital for Special Surgery
 industry: Healthcare
 link: 
-description: Built an enterprise-wide KPI-centered dashboard and interactive data analytics center of excellence for CAMP at Hospital for Special Surgery, featuring operational excellence visualizations, hospital network monitoring with heat maps and 3D flyover views, and a patient journey storyteller component to support $2.1B in annual operations and better quality care for 200,000+ patients annually.
+description: An enterprise analytics environment built for HSS’s Center for Analytics, Modeling & Performance team's new dedicated workspace. The platform supports the hospital's analytics team with interactive views of facility capacity, operating and waiting room status, provider networks, service demand, and complex patient journeys.
 ---
-### Brief
-Build an enterprise-wide KPI-centered dashboard and interactive data analytics center of excellence for the CAMP team at Hospital for Special Surgery. The project included an operational excellence data analytics center with touchscreens, hospital and provider network monitoring with heat maps and 3D flyover views, and a patient journey storyteller feature. The goal was to create advanced data analytics and awareness supporting better quality care and $2.1B in annual operations.
+### Need
+The Hospital for Special Surgery wanted to create custom exploratory and status visualizations for their new Center for Analytics, Modeling & Performance workspace. The system would support hospital staff in monitoring facility operations, provider networks, service activity, waiting and operating room capacity, and complex patient journeys. The platform needed to display large volumes of operational and geographic data while remaining clear, responsive, and useful at a glance.
 
 ### Tech Stack
 - Visualization: Deck.gl (Basemap, heatmap, 3D rendering), D3
 - Framework: React
 - Technologies: JavaScript, HTML, CSS, AWS, custom data APIs
 
-### Design Process
-- Conducted on-site workshops with CAMP team and workspace architects to gather feedback and understand user needs
-- Addressed challenges with large touch display readability by scaling up type and interface elements
-- Implemented automatic smoothing for complex actions like map zooming to enhance usability
-- Defined clear purposes for each visualization with expandable detail views to balance aesthetics with practical usefulness
-- Created an interactive data analytics center of excellence that incites delight while maintaining the gravity of elite healthcare delivery
+### Requirements & Design
+Worked with HSS’s Executive Director of CAMP, Chief Analytics Officer, analytics team, and workspace architects to define the purpose and interaction model for each visualization. Participated in on-site interviews to understand how the displays would be used within the physical workspace. Large-screen readability was addressed by increasing type and interface scale, simplifying controls, and giving each visualization a defined operational purpose with expandable detail. Interactive maps required smooth navigation across clusters of facilities and service areas, so automatic map-positioning and smoothing behaviors were introduced. Rendering performance was another major challenge: D3 visualizations used precalculated positions and canvas rather than SVG, while deck.gl layers were carefully configured to prevent unnecessary updates and maintain responsive interaction.
 
-### Development Process
-- Architected solution using deck.gl (choosen for geospatial and performance features)
-- For 2D visuals using D3: precalculated positions and drew to canvas rather than SVG
-- Carefully managed deck.gl's updateTriggers for each layer to prevent unnecessary renders
+### Build & Architecture
+Led development of the visualization architecture and selected deck.gl for its geospatial rendering and performance capabilities. Built interactive provider maps, heat maps, facility status views, and department-level service summaries using React, D3.js, and deck.gl. Developed performance-optimized 2D visualizations by precalculating positions and rendering to canvas, and managed deck.gl update triggers at the layer level to avoid unnecessary rerendering. Also contributed algorithms for identifying and representing complex patient journeys, reviewed code from contributing developers, and worked closely with the design team to iterate across exploratory prototypes and production-ready visualizations.
 
-### Delivered Result
-Exploratory and status visualizations for HSS's data analytics workspace, including interactive maps of associated providers, facility usage status board with KPIs (waiting and operating room capacity and status by facility and department), and department-level summaries of services. The project exceeded acceptance criteria with positive feedback, supporting better quality care for HSS's more than 200,000 patients treated annually.
-
-### Summary Narrative
-As lead developer at Two-N, I led the development of CAMP (Center for Analytics Modeling and Performance) for Hospital for Special Surgery, creating exploratory and status visualizations for their data analytics and performance modeling group. I worked directly with the Executive Director of CAMP, the Chief Analytics Officer, alongside a junior engineer, our design director and project manager. My responsibilities included architecting the deck.gl visualization solution, developing performance-optimized 2D visualizations using D3, managing and reviewing code contributions from a junior developer, and contributing to the patient journey storyteller component with algorithm development for identifying complex patient journeys. I partnered with our design director and junior engineer to rapidly experiment with and prototype 3D and 2D experiences. Our design process emphasized user-centered development, ensuring our visualizations reflected user needs and fit seamlessly into their new workspace. We balanced eye-catching aesthetics with practical usefulness by defining clear purposes for each visualization and enabling detailed views when users interacted with the content. On the technical side, we optimized performance for data and rendering-heavy applications, carefully managing updateTriggers for each layer to prevent unnecessary renders. The final deliverable included an interactive data analytics center of excellence displayed on touchscreens, featuring visualizations that incite delight while maintaining the gravity and importance of elite healthcare delivery and operational excellence. The project exceeded acceptance criteria with positive feedback from the CAMP team, supporting better quality care for HSS's more than 200,000 patients treated annually.
+### Delivery & Impact
+Delivered an interactive analytics environment for HSS’s CAMP workspace, including provider-network maps, facility-use status boards, capacity KPIs, department-level service summaries, and patient-journey visualizations. The project exceeded acceptance criteria and received positive feedback from the CAMP team. The resulting platform helped transform complex operational data into an engaging, high-performance experience supporting awareness, analysis, and better-quality care across HSS’s multibillion-dollar healthcare operations.

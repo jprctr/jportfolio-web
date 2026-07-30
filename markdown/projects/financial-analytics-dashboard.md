@@ -5,24 +5,21 @@ category: Business Intelligence
 client: eBay
 industry: E-commerce / Technology
 link: 
-description: Built custom business analytics visualizations geared for company-wide viewing at eBay, from executive level to entry level, to help employees better understand financial trends, forecasts, cross-border transactions, device usage, traffic funnel metrics, real-time global trends, and more. All visualizations needed to be clear and understandable for people outside the analytics team.
+description: Custom business analytics visualizations geared for company-wide viewing at eBay, from executive to entry level, to help employees better understand financial trends, forecasts, cross-border transactions, device usage, traffic funnel metrics, real-time global trends, and more.
 ---
-### Brief
-Build custom business analytics visualizations geared for company-wide viewing at eBay, from executive level to entry level, to help employees better understand financial trends, forecasts, cross-border transactions, device usage, traffic funnel metrics, real-time global trends, and more. All visualizations needed to be clear and understandable for people outside the analytics team. The dashboard should include comprehensive filtering capabilities, views including payments flows, performance summaries, and regional breakdowns.
+### Need
+eBay's finance and analytics team engaged Pitch Interactive to help create a custom business analytics visualization tool to help their teams better understand financial trends, forecasts, cross-border transactions, device usage, traffic funnel metrics, real-time global trends, and more. The dashboard needed to include comprehensive filtering capabilities, such as breakdowns by business unit and region, and have an interface optimized for touch interaction.
 
 ### Tech Stack
 - JavaScript
 - React
 - D3
 
-### Design Process
-The design process focused on creating a clean, intuitive homescreen that effectively showcased key financial metrics with clear visual hierarchy and prominent display of critical KPIs. A major challenge was designing an effective menu system for easy navigation through multiple dashboard sections, which we solved by creating an intuitive navigation structure. The Payments view required both functional clarity and visual appeal, so we used consistent design patterns throughout the dashboard to maintain usability. Ensuring the dashboard remained understandable for executives and managers at various levels drove our design decisions, with a focus on clarity over complexity.
+### Requirements & Design
+When I joined the team at Pitch, the Financial Analytics Dashboard they had created for eBay was in active use across a number of business units. During my time on the project we identified headline KPIs for a number of the dashboard's individual views which could be surfaced through preview widgets on the homescreen which provided important insights on the state of the business at a glance. We also engaged with stakeholders from the client's analytics and technical teams to establish requirements for a new view, Payments, which provided a detailed view of flows from payment processors to sellers.
 
-### Development Process
-The development process centered on implementing efficient data refresh mechanisms to support live-updated widgets that accurately reflected real-time global trends. A key challenge was ensuring performance across multiple complex visualizations, which we addressed through optimized rendering strategies. Another critical objective was making the dashboard accessible and usable for executives and managers with varying technical backgrounds. We leveraged D3 to create powerful yet accessible visualizations of complex financial data, designing clear, intuitive interfaces that required minimal explanation.
+### Build & Architecture **needs revision**
+The development process involved close coordiantion with eBay technical teams to define the necessary data models for the internal APIs created to support views such as the homescreen widgets and the Payments. On the front-end we implemented efficient data refresh mechanisms to keep the D3-in-react charts responsive and up-to-date with configuration and filter selections, while also maintinging a consisting design language and comfortable touch targets for controls.
 
-### Delivered Result
-A comprehensive, company-wide business analytics dashboard enabling eBay executives and managers to better understand and track financial trends, forecasts, cross-border transactions, device usage, traffic funnel metrics, real-time global trends, and more. The dashboard included live-updated widgets, a redesigned homescreen with clear visual hierarchy, a comprehensive Payments view, and a performance summary view with traffic and sell funnel breakdowns by region.
-
-### Summary Narrative
-As a developer at Pitch Interactive, I worked on the Financial Analytics Dashboard for eBay, creating custom business analytics visualizations geared for company-wide viewing to help people better understand financial trends, forecasts, cross-border transactions, device usage, traffic funnel metrics, real-time global trends, and more. The dashboard was designed for eBay's finance and analytics team, with the primary audience being eBay executives and managers. The Pitch Interactive team consisted of two developers, an executive creative director, and a project manager. I contributed to the overall dashboard evolution, which included live-updated widgets showing real-time global trends and more financial metrics. The final deliverable was a comprehensive, company-wide business analytics dashboard that enabled eBay executives and managers to better understand and track financial trends, forecasts, cross-border transactions, device usage, traffic funnel metrics, real-time global trends, and more. The dashboard included live-updated widgets, a redesigned homescreen with clear visual hierarchy, a comprehensive Payments view, and a performance summary view with traffic and sell funnel breakdowns by region. This tool empowered eBay's leadership with actionable insights into the company's financial performance across multiple dimensions.
+### Delivery & Impact
+The delivered Financial Analytics Dashboard empowers eBay employees company-wide with comprehensive visibility into company-wide financial performance, a homescreen which highlights critical KPIs, a comprehensive Payments view for detailed transaction analysis, and a performance summary view with traffic and sell funnel breakdowns organized by region. This company-wide business analytics tool transformed how eBay understands and gathers insights about the health of the business.
