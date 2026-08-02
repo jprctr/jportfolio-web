@@ -2,7 +2,7 @@
 title: Brand Patterns
 date: 2025-09-01
 category: Market Intelligence
-client: UM (Universal McCann)
+client: Universal McCann
 industry: Advertising
 link: 
 description: A streamlined web application enabling UM agency teams to create custom visualizations for clients based on their proprietary Brand Patterns model. Allows teams to select clients, competitors, and audiences, translates those selections into YouGov API queries, processes the results through the Brand Patterns model, and generates client-ready visualizations viewable online or exported as static images.

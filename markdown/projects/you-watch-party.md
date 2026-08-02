@@ -1,5 +1,5 @@
 ---
-title: You Watch Party Interactive Experience
+title: You Watch Party
 date: 2019-12-26
 category: Interactive Experience
 client: Cosmopolitan Magazine
