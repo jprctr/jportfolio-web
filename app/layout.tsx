@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 const raleway = Raleway({
   variable: "--font-raleway",
   subsets: ["latin"],
+  display: 'swap',
 });
 
 export default function RootLayout({
