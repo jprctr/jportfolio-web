@@ -4,6 +4,7 @@ import matter from 'gray-matter';
 import sortBy from 'lodash.sortby';
 
 import { Metadata } from '@/app/types';
+import { manualSort } from '@/app/projects/metadata';
 
 const markdownDirectory = 'markdown';
 const publicDirectory = 'public';
@@ -34,14 +35,23 @@ export function getProjectList() {
   try {
     const directory = path.join(process.cwd(), `${markdownDirectory}/${projectDirectory}`);
     const projectFiles = fs.readdirSync(directory);
-    const projects = sortBy(projectFiles.map(file => {
-      const slug = file.replace('.md', '');
-      const projectData = getProjectData(slug);
-      return {
-        slug,
-        ...projectData,
-      };
-    }), ({ metadata }) => metadata && metadata.date && -metadata.date);
+    const projects = sortBy(
+      sortBy(
+        projectFiles.map(file => {
+          const slug = file.replace('.md', '');
+          const projectData = getProjectData(slug);
+          return {
+            slug,
+            ...projectData,
+          };
+        })
+      , ({ metadata }) => metadata && metadata.date && -metadata.date) // date sort
+      , ({ slug }) => { // manual sort
+        const index = manualSort.indexOf(slug);
+        const order = index === -1 ? manualSort.length : index;
+        return order;
+      }
+    );
     return { projects };
   } catch (error) {
     console.error(error);
