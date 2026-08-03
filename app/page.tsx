@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import ReactMarkdown from "react-markdown";
 
+import { thumbnails, thumbnailAspect } from '@/app/projects/metadata';
 import { getAboutCopy, getProjectList } from '@/app/helpers';
 import { Metadata } from '@/app/types';
 import ProjectSummary from '@/app/components/projectSummary';
@@ -21,12 +22,12 @@ export default function Home() {
           <Link key={slug} className='@container bg-white-layer px-4 py-2 rounded-md' href={`/projects/${slug}`}>
             {metadata && (
               <div className='flex flex-col @2xl:gap-4 @2xl:flex-row @2xl:flex-row-reverse'>
-                <div className='flex flex-1 py-2'>
+                <div className='flex-1 py-2 mt-auto'>
                   <Image
-                    src={`/projects/${slug}/0.jpg`}
+                    src={`/projects/${slug}/${thumbnails[slug] || 0}.jpg`}
                     alt={`${metadata.title} thumbnail`}
                     loading='eager'
-                    className='aspect-3/2 height-auto object-cover object-top rounded-md'
+                    className={`aspect-${thumbnailAspect[slug] || 'auto'} object-cover object-top rounded-md`}
                     width='720'
                     height='720'
                   />
