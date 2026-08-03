@@ -1,7 +1,7 @@
 // per-project layout and styling overrides
 
 // default is by date, moving top 3 up to be 'above the fold'
-export const manualSort = [
+export const manualSort: string[] = [
   'camp',
   'decoding-hate',
   'financial-analytics-dashboard',
@@ -9,7 +9,7 @@ export const manualSort = [
 ];
 
 // default is 0
-export const thumbnails = {
+export const thumbnails: { [key: string]: number } = {
   'decoding-hate': 1,
   'financial-analytics-dashboard': 1,
   'brand-patterns': 2,
@@ -22,13 +22,13 @@ export const thumbnails = {
 };
 
 // default is auto
-export const thumbnailAspect = {
+export const thumbnailAspect: { [key: string]: string } = {
   'you-watch-party': '3/2',
   'kleptocrat': '3/2',
 }
 
 // default is @3xl:basis-sm
-export const galleryLayout = {
+export const galleryLayout: { [key: string]: string[] } = {
   'camp': [
     '@3xl:basis-full',
   ],
