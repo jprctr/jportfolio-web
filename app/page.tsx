@@ -21,7 +21,7 @@ export default function Home() {
           <Link key={slug} className='@container bg-white-layer px-4 py-2 rounded-md' href={`/projects/${slug}`}>
             {metadata && (
               <div className='flex flex-col @2xl:gap-4 @2xl:flex-row @2xl:flex-row-reverse'>
-                <div className='flex-1 py-2'>
+                <div className='flex flex-1 py-2'>
                   <Image
                     src={`/projects/${slug}/0.jpg`}
                     alt={`${metadata.title} thumbnail`}
