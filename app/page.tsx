@@ -27,12 +27,13 @@ export default function Home() {
                     src={`/projects/${slug}/${thumbnails[slug] || 0}.jpg`}
                     alt={`${metadata.title} thumbnail`}
                     loading='eager'
+                    // className={`aspect-${thumbnailAspect[slug] || 'auto'} object-cover object-top rounded-md`}
                     className={`aspect-${thumbnailAspect[slug] || 'auto'} object-cover object-top rounded-md`}
                     width='720'
                     height='720'
                   />
                 </div>
-                <div className='flex-2 @lg:bg-red'>
+                <div className='flex-2'>
                   <ProjectSummary metadata={metadata} />
                   <p className='py-2'>{metadata.description}</p>
                 </div>

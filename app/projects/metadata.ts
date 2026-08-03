@@ -1,11 +1,15 @@
-export const manualSort = [ // default is by date, moving top 3 up to be 'above the fold'
+// per-project layout and styling overrides
+
+// default is by date, moving top 3 up to be 'above the fold'
+export const manualSort = [
   'camp',
   'decoding-hate',
   'financial-analytics-dashboard',
   'portfolio-analytics-tool'
 ];
 
-export const thumbnails = { // default is 0
+// default is 0
+export const thumbnails = {
   'decoding-hate': 1,
   'financial-analytics-dashboard': 1,
   'brand-patterns': 2,
@@ -17,7 +21,39 @@ export const thumbnails = { // default is 0
   'phinch-app': 1
 };
 
+// default is auto
 export const thumbnailAspect = {
   'you-watch-party': '3/2',
   'kleptocrat': '3/2',
+}
+
+// default is @3xl:basis-sm
+export const galleryLayout = {
+  'camp': [
+    '@3xl:basis-full',
+  ],
+  'cute-pet': [
+    '@3xl:basis-full',
+    'flex-1 basis-3xs @3xl:basis-sm',
+    'flex-1 basis-3xs @3xl:basis-sm',
+  ],
+  '2022-midterm-elections-big-board': [
+    '@3xl:basis-full',
+  ],
+  'you-watch-party': [
+    '@3xl:basis-full',
+    'flex-1 basis-1/2 @md:basis-1/4',
+    'flex-1 basis-1/2 @md:basis-1/4',
+    'flex-1 basis-1/2 @md:basis-1/4',
+    'flex-1 basis-1/2 @md:basis-1/4',
+    'flex-1 basis-1/2 @md:basis-1/4',
+  ],
+  'move-to-zero': [
+    '@3xl:basis-full',
+  ],
+  'kleptocrat': [
+    'flex-1 basis-1/2 @md:basis-1/4',
+    'flex-1 basis-1/2 @md:basis-1/4',
+    'flex-1 basis-1/2 @md:basis-1/4',
+  ],
 }
