@@ -26,7 +26,7 @@ export default async function Project({ params }: { params: Promise<{ slug: stri
         {project.metadata && (
           <>
             <ProjectSummary metadata={project.metadata} />
-            {project.metadata.link && <a href={project.metadata.link} target='_blank'>Link ↗</a>}
+            {project.metadata.link && <a className='mt-2' href={project.metadata.link} target='_blank'>Link ↗</a>}
           </>
         )}
       </div>
