@@ -10,6 +10,7 @@ export const manualSort: string[] = [
 
 // default is 0
 export const thumbnails: { [key: string]: number } = {
+  'camp': 2,
   'decoding-hate': 1,
   'financial-analytics-dashboard': 1,
   'brand-patterns': 2,
@@ -31,6 +32,8 @@ export const thumbnailAspect: { [key: string]: string } = {
 export const galleryLayout: { [key: string]: string[] } = {
   'camp': [
     '@3xl:basis-full',
+    'flex-1 basis-1/2 @md:basis-1/5',
+    'flex-1 basis-1/2 @md:basis-1/2',
   ],
   'cute-pet': [
     '@3xl:basis-full',
