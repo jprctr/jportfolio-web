@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import ReactMarkdown from "react-markdown";
 
-import { thumbnails, thumbnailAspect } from '@/app/projects/metadata';
+import { thumbnails } from '@/app/projects/metadata';
 import { getAboutCopy, getProjectList } from '@/app/helpers';
 import { Metadata } from '@/app/types';
 import ProjectSummary from '@/app/components/projectSummary';
@@ -27,7 +27,8 @@ export default function Home() {
                     src={`/projects/${slug}/${thumbnails[slug] || 0}.jpg`}
                     alt={`${metadata.title} thumbnail`}
                     loading='eager'
-                    className={`aspect-${thumbnailAspect[slug] || 'auto'} object-cover object-top rounded-md h-auto`}
+                    className='aspect-auto object-cover object-top rounded-md h-auto'
+                    // className={`aspect-${thumbnailAspect[slug] || 'auto'} object-cover object-top rounded-md h-auto`}
                     width='720'
                     height='720'
                   />

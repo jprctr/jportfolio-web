@@ -11,24 +11,27 @@ export const manualSort: string[] = [
 // default is 0
 export const thumbnails: { [key: string]: string } = {
   'camp': '2',
-  'decoding-hate': '1',
+  'decoding-hate': '3',
   'financial-analytics-dashboard': '1',
   'brand-patterns': '2',
   'cute-pet': '_3',
   'portfolio-analytics-tool': '3',
-  'the-artists-way': '1',
+  'the-artists-way': '2',
   '2022-midterm-elections-big-board': '2',
-  'you-watch-party': '2',
+  'covid-19-case-mapper': '1',
+  'you-watch-party': '_2',
   'move-to-zero': '1',
   'retrofit': '2',
-  'phinch-app': '1',
+  'kleptocrat': '_0',
 };
 
+// leaving aside for now as this didn't work consistently after rebuilds
+// manually cropping thumbnails instead (and ignoring with _ prefix in file name)
 // default is auto
-export const thumbnailAspect: { [key: string]: string } = {
-  'you-watch-party': '3/2',
-  'kleptocrat': '3/2',
-};
+// export const thumbnailAspect: { [key: string]: string } = {
+//   'you-watch-party': '3/2',
+//   'kleptocrat': '3/2',
+// };
 
 // default is @3xl:basis-sm
 export const galleryLayout: { [key: string]: string[] } = {
@@ -45,6 +48,9 @@ export const galleryLayout: { [key: string]: string[] } = {
   '2022-midterm-elections-big-board': [
     '@3xl:basis-full',
   ],
+  'covid-19-case-mapper': [
+    '@3xl:basis-full',
+  ],
   'you-watch-party': [
     '@3xl:basis-full',
     'flex-1 basis-1/2 @md:basis-1/4',
@@ -54,6 +60,9 @@ export const galleryLayout: { [key: string]: string[] } = {
     'flex-1 basis-1/2 @md:basis-1/4',
   ],
   'move-to-zero': [
+    '@3xl:basis-full',
+  ],
+  'phinch-app': [
     '@3xl:basis-full',
   ],
   'kleptocrat': [
