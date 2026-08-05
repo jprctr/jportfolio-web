@@ -62,7 +62,7 @@ export function getProjectList() {
 export function getProjectImageList(slug: string) {
   try {
     const directory = path.join(process.cwd(), `${publicDirectory}/${projectDirectory}/${slug}`);
-    const imageList = fs.readdirSync(directory);
+    const imageList = fs.readdirSync(directory).filter((name) => !name.startsWith('_'));
     return { imageList };
   } catch (error) {
     console.error(error);

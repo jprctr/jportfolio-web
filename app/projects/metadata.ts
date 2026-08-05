@@ -5,28 +5,30 @@ export const manualSort: string[] = [
   'camp',
   'decoding-hate',
   'financial-analytics-dashboard',
-  'portfolio-analytics-tool'
+  'portfolio-analytics-tool',
 ];
 
 // default is 0
-export const thumbnails: { [key: string]: number } = {
-  'camp': 2,
-  'decoding-hate': 1,
-  'financial-analytics-dashboard': 1,
-  'brand-patterns': 2,
-  'portfolio-analytics-tool': 3,
-  'the-artists-way': 1,
-  '2022-midterm-elections-big-board': 2,
-  'you-watch-party': 2,
-  'move-to-zero': 1,
-  'phinch-app': 1
+export const thumbnails: { [key: string]: string } = {
+  'camp': '2',
+  'decoding-hate': '1',
+  'financial-analytics-dashboard': '1',
+  'brand-patterns': '2',
+  'cute-pet': '_3',
+  'portfolio-analytics-tool': '3',
+  'the-artists-way': '1',
+  '2022-midterm-elections-big-board': '2',
+  'you-watch-party': '2',
+  'move-to-zero': '1',
+  'retrofit': '2',
+  'phinch-app': '1',
 };
 
 // default is auto
 export const thumbnailAspect: { [key: string]: string } = {
   'you-watch-party': '3/2',
   'kleptocrat': '3/2',
-}
+};
 
 // default is @3xl:basis-sm
 export const galleryLayout: { [key: string]: string[] } = {
@@ -59,4 +61,4 @@ export const galleryLayout: { [key: string]: string[] } = {
     'flex-1 basis-1/2 @md:basis-1/4',
     'flex-1 basis-1/2 @md:basis-1/4',
   ],
-}
+};

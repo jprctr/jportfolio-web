@@ -27,8 +27,7 @@ export default function Home() {
                     src={`/projects/${slug}/${thumbnails[slug] || 0}.jpg`}
                     alt={`${metadata.title} thumbnail`}
                     loading='eager'
-                    // className={`aspect-${thumbnailAspect[slug] || 'auto'} object-cover object-top rounded-md`}
-                    className={`aspect-${thumbnailAspect[slug] || 'auto'} object-cover object-top rounded-md`}
+                    className={`aspect-${thumbnailAspect[slug] || 'auto'} object-cover object-top rounded-md h-auto`}
                     width='720'
                     height='720'
                   />
