@@ -13,7 +13,7 @@ The Hospital for Special Surgery wanted to create custom exploratory and status 
 ### Tech Stack
 - Visualization: Deck.gl (Basemap, heatmap, 3D rendering), D3
 - Framework: React
-- Technologies: JavaScript, HTML, CSS, AWS, custom data APIs
+- Technologies: JavaScript, HTML, CSS, AWS, GraphQL APIs
 
 ### Requirements & Design
 Worked with HSS’s Executive Director of CAMP, Chief Analytics Officer, analytics team, and workspace architects to define the purpose and interaction model for each visualization. Participated in on-site interviews to understand how the displays would be used within the physical workspace. Large-screen readability was addressed by increasing type and interface scale, simplifying controls, and giving each visualization a defined operational purpose with expandable detail. Interactive maps required smooth navigation across clusters of facilities and service areas, so automatic map-positioning and smoothing behaviors were introduced. Rendering performance was another major challenge: D3 visualizations used precalculated positions and canvas rather than SVG, while deck.gl layers were carefully configured to prevent unnecessary updates and maintain responsive interaction.
