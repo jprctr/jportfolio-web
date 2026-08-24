@@ -21,21 +21,25 @@ export default function Home() {
         list.projects && list.projects.map(({ slug, metadata }) => (
           <Link key={slug} className='@container bg-white-layer px-4 py-2 rounded-md' href={`/projects/${slug}`}>
             {metadata && (
-              <div className='flex flex-col @2xl:gap-4 @2xl:flex-row @2xl:flex-row-reverse'>
-                <div className='flex-1 py-2 mt-auto'>
-                  <Image
-                    src={`/projects/${slug}/${thumbnails[slug] || 0}.jpg`}
-                    alt={`${metadata.title} thumbnail`}
-                    loading='eager'
-                    className='aspect-auto object-cover object-top rounded-md h-auto'
-                    // className={`aspect-${thumbnailAspect[slug] || 'auto'} object-cover object-top rounded-md h-auto`}
-                    width='720'
-                    height='720'
-                  />
-                </div>
-                <div className='flex-2'>
+
+              <div className='flex flex-col'>
+                <div className='pb-1 @2xl:max-w-5/8'>
                   <ProjectSummary metadata={metadata} />
-                  <p className='py-2'>{metadata.description}</p>
+                </div>
+                <div className='flex flex-col @2xl:gap-4 @2xl:flex-row'>
+                  <div className='flex-64 py-2 mb-auto'>
+                    <Image
+                      src={`/projects/${slug}/${thumbnails[slug] || 0}.jpg`}
+                      alt={`${metadata.title} thumbnail`}
+                      loading='eager'
+                      className='aspect-auto object-cover object-top rounded-md h-auto'
+                      width='720'
+                      height='720'
+                    />
+                  </div>
+                  <div className='flex-36 py-2'>
+                    <p>{metadata.description}</p>
+                  </div>
                 </div>
               </div>
             )}
