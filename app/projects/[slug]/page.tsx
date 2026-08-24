@@ -1,7 +1,7 @@
 import { redirect } from 'next/navigation';
 import ReactMarkdown from "react-markdown";
 
-import { getProjectData } from '@/app/helpers';
+import { getProjectData, getProjectImageList } from '@/app/helpers';
 import ProjectSummary from '@/app/components/projectSummary';
 import ImageGallery from '@/app/components/imageGallery';
 
@@ -17,6 +17,7 @@ import ImageGallery from '@/app/components/imageGallery';
 export default async function Project({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const project = getProjectData(slug);
+  const { imageList } = getProjectImageList(slug);
   if (project.error) {
     redirect('/');
   }
@@ -32,7 +33,7 @@ export default async function Project({ params }: { params: Promise<{ slug: stri
       </div>
       <div className='flex flex-col'>
         <div className='flex'> 
-          {slug && <ImageGallery slug={slug} />}
+          {imageList && <ImageGallery slug={slug} imageList={imageList} />}
         </div>
         <div className='project flex flex-col gap-2'>
           <ReactMarkdown>{project.markdown}</ReactMarkdown>
