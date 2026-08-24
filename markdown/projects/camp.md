@@ -5,7 +5,7 @@ category: Business Intelligence
 client: Hospital for Special Surgery
 industry: Healthcare
 link: 
-description: An enterprise analytics environment built for HSS’s Center for Analytics, Modeling & Performance team's new dedicated workspace. The platform supports the hospital's analytics team with interactive views of facility capacity, operating and waiting room status, provider networks, service demand, and complex patient journeys.
+description: Enterprise analytics environment built for the Center for Analytics, Modeling & Performance team's new dedicated workspace. The platform supports the hospital's analytics team with interactive views of facility capacity, operating and waiting room status, provider networks, and service demand.
 ---
 ### Need
 The Hospital for Special Surgery wanted to create custom exploratory and status visualizations for their new Center for Analytics, Modeling & Performance workspace. The system would support hospital staff in monitoring facility operations, provider networks, service activity, waiting and operating room capacity, and complex patient journeys. The platform needed to display large volumes of operational and geographic data while remaining clear, responsive, and useful at a glance.
