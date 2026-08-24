@@ -5,7 +5,7 @@ category: Data Journalism
 client: Google News Initiative / Stanford Big Local News
 industry: Media
 link: https://covid19.biglocalnews.org/county-maps
-description: An interactive map tool developed with Pitch Interactive and Stanford Big Local News to provide local journalists with freely embeddable visualizations of COVID-19 confirmed cases and fatalities across US states and counties, normalized per 100k population with moving averages to ensure accurate, up-to-date pandemic coverage.
+description: Interactive mapping tool developed with Pitch Interactive and Stanford Big Local News to provide local journalists with freely embeddable visualizations of COVID-19 confirmed cases and fatalities across US states and counties, normalized per 100k population with moving averages to ensure accurate, up-to-date pandemic coverage.
 ---
 ### Need
 To support local journalists covering the COVID-19 pandemic the Google News Initiative and Stanford's Big Local News sought to create freely embeddable, up-to-date interactive visualizations to present COVID-19 data for local communities with accurate normalization to enable meaningful comparisons across different regions. The tool needed tool display data in relation to population, using rates per 100k people, to fairly compare areas of varying population sizes, incorporates moving averages to prevent misleading representations from statistical artifacts or reporting inconsistencies, and offers search functionality by zip code or county name for quick access to specific geographic data.

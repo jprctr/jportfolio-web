@@ -5,7 +5,7 @@ category: Interactive Art
 client: SOMArts
 industry: Art
 link: https://somarts.org/event/rebootingthefuture/
-description: A custom arcade cabinet where visitors press buttons on an 8x4 grid to raise the elevation of the onscreen topography. Retrofit’s playful form invites viewers to manipulate its environment. As they work, sandy islands grow together and fill with trees, streets, houses, and hills. Over time the landscape responds by reshaping itself; changing, and then erasing, the players work.
+description: Custom arcade cabinet where visitors press buttons on an 8x4 grid to raise the elevation of the onscreen topography. Retrofit’s playful form invites viewers to manipulate its environment. As they work, sandy islands grow together and fill with trees, streets, houses, and hills. Over time the landscape responds by reshaping itself; changing, and then erasing, the players work.
 ---
 ### Concept
 For SOMArts' 40th-anniversary "Rebooting the Future: Multimedia & Performance Arts Festival," artists were asked to imagine what the future might hold and what technological tools we might use, discard or redesign to get there. Retrofit explores themes of human agency, environmental change, and the fragility of our impact in an uncertain world.

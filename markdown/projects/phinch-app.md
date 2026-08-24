@@ -5,7 +5,7 @@ category: Scientific Visualization
 client: U.C. Riverside
 industry: Education
 link: https://phinch.org/
-description: An offline desktop application for researchers exploring large biological datasets such as microbiomes and metagenomes. Created as an Electron application to enable cross-platform distribution to macOS, Windows, and Linux, Phinch provides tools for cleaning, filtering, and sorting HDF5 and JSON BIOM files, with exportable visualizations optimized for biological data.
+description: Desktop application for researchers exploring large biological datasets such as microbiomes and metagenomes. Created as an Electron application to enable cross-platform distribution to macOS, Windows, and Linux, Phinch provides tools for cleaning, filtering, and sorting HDF5 and JSON BIOM files, with exportable visualizations optimized for biological data.
 ---
 ### Need
 In response to community feedback on Phinch 1.0, created by my colleagues at Pitch Interactive, and the increasing scale of biological datasets, we partnered with biology faculty at U.C. Riverside to create an updated visualization tool to better serve researchers working with large biological datasets. Researchers needed an offline solution that would eliminate ongoing infrastructure costs and data custody concerns associated with uploading biological dataset to the web.

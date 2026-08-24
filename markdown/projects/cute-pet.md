@@ -5,7 +5,7 @@ category: Interactive Art
 client: Emerging As We Disappear
 industry: Art
 link: 
-description: An interactive object that asks visitors to share their outlook on the future through a 2D political compass-style interface. Their responses are visualized on screen, and in exchange a fortune-telling cat with a GPU for a face shares cryptic wisdom powered by a local LLM.
+description: Interactive object that asks visitors to share their outlook on the future through a 2D political compass-style interface. Their responses are visualized on screen, and in exchange a fortune-telling cat with a GPU for a face shares cryptic wisdom powered by a local LLM.
 ---
 ### Concept
 Cute Pet explores perspectives on agency, optimism, the future, and our desire for answers in an uncertain world. The project was created for the "Emerging As We Disappear" exhibition, which featured US-based artists addressing themes of national and personal identity, societal decline, increasing complexity, excess and greed, mental health, superstition, activism, community, and hope. 

@@ -5,7 +5,7 @@ category: Game Development
 client: Mintz Group
 industry: Investigations
 link: https://kleptocrat.net/
-description: A digital card game for iOS that teaches about kleptocracy and money laundering by letting players take on the role of a corrupt politician and choose strategies based on famous historical cases to understand real-world corruption patterns and risk factors.
+description: Digital card game for iOS that teaches about kleptocracy and money laundering by letting players take on the role of a corrupt politician and choose strategies based on famous historical cases to understand real-world corruption patterns and risk factors.
 ---
 ### Need
 Following the release of Panama Papers in 2016, investigative firm Mintz Group wanted to create a tool to help the public learn more about kleptocracy and money laundering patterns. The project aimed to create an educational game that would help citizens, law enforcement, journalists, and NGOs better understand how public assets are misappropriated by immersing players in the reality of corruption. By taking on the role of a corrupt politician, players could recognize asset-hiding patterns and learn how corrupt officials move, conceal, and launder money through sophisticated offshore structures and legal frameworks.

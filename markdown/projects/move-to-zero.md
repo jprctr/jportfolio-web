@@ -5,7 +5,7 @@ category: Data Storytelling
 client: Nike
 industry: Apparel / Sportswear
 link: https://archive.pitchinteractive.com/Nike-Climate-and-Sport/
-description: An interactive data visualization experience created for the 2019 Climate Summit in NYC, collaborating with Rhodium Group to showcase current climate conditions and their impact on five different sports (Global Football, Running, Tennis, Snowboarding, and American Football), featuring custom visualizations showing both current impacts on athlete safety and future climate projections.
+description: Interactive data visualization experience created for the 2019 Climate Summit in NYC, collaborating with Rhodium Group to showcase current climate conditions and their impact on five different sports (Global Football, Running, Tennis, Snowboarding, and American Football), featuring custom visualizations showing both current impacts on athlete safety and future climate projections.
 ---
 
 ### Need

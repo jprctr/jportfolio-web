@@ -5,7 +5,7 @@ category: Art Installation
 client: Lemmerman Gallery, New Jersey City University
 industry: Art
 link: 
-description: An audiovisual exploration that critiques the role of language in the contemporary art ecosystem by parsing over 400 artists' statements into poetic phrases and visualizing their conceptual relationships in an immersive 3D network installation.
+description: Audiovisual exploration that critiques the role of language in the contemporary art ecosystem by parsing over 400 artists' statements into poetic phrases and visualizing their conceptual relationships in an immersive 3D network installation.
 ---
 
 ### Concept

@@ -5,7 +5,7 @@ category: Market Intelligence
 client: Universal McCann
 industry: Advertising
 link: 
-description: A streamlined web application enabling UM agency teams to create custom visualizations for clients based on their proprietary Brand Patterns model. Allows teams to select clients, competitors, and audiences, translates those selections into YouGov API queries, processes the results through the Brand Patterns model, and generates client-ready visualizations viewable online or exported as static images.
+description: Streamlined web application enabling UM agency teams to create custom visualizations for clients based on their proprietary Brand Patterns model. Allows teams to select clients, competitors, and audiences, translates those selections into YouGov API queries, processes the results through the Brand Patterns model, and generates client-ready visualizations viewable online or exported as static images.
 ---
 ### Need
 Universal McCann wanted to transform their proprietary Brand Patterns model from a manual, script-based analysis tool into an interactive web application that could serve clients with professional-grade visualizations. Agency teams needed to be able to select specific clients, competitors, and target audiences, and have them be automatically translated into YouGov API queries, which would then be processed by the agency's proprietary Brand Patterns model and transformed into client-ready visualization outputs. The tool needed to support both online viewing and export as static images, accommodating various client presentation formats while maintaining statistical rigor and data integrity throughout the analysis pipeline.
